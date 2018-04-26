@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>780</width>
+    <height>635</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Visor Tiff</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../visorTiff-Release/termic1.png</normaloff>../visorTiff-Release/termic1.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="Next">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>526</y>
+      <width>84</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>--- &gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Prev">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>526</y>
+      <width>84</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt; ---</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LblTotal">
+    <property name="geometry">
+     <rect>
+      <x>426</x>
+      <y>535</y>
+      <width>16</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>338</x>
+      <y>535</y>
+      <width>16</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LblNumber">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>535</y>
+      <width>16</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="my_qlabel" name="Lbl_Image">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>640</width>
+      <height>512</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>400</y>
+      <width>21</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_x">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>400</y>
+      <width>59</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>420</y>
+      <width>21</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_y">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>420</y>
+      <width>59</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>380</y>
+      <width>59</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Posición:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>440</y>
+      <width>111</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temperatura C°</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_t">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>460</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_color">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>40</y>
+      <width>31</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/Imgs/color_gray.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QSlider" name="SL_temp">
+    <property name="geometry">
+     <rect>
+      <x>754</x>
+      <y>40</y>
+      <width>20</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_max">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>41</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_min">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>292</y>
+      <width>41</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_mid">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>166</y>
+      <width>41</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>330</y>
+      <width>61</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Umbral</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lbl_binTemp">
+    <property name="geometry">
+     <rect>
+      <x>728</x>
+      <y>337</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>780</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archi&amp;vo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguraciones">
+    <property name="title">
+     <string>&amp;Configuraciones</string>
+    </property>
+    <widget class="QMenu" name="menuMultiplicador">
+     <property name="title">
+      <string>&amp;Multiplicador</string>
+     </property>
+     <addaction name="action0_4"/>
+     <addaction name="action0_04"/>
+    </widget>
+    <addaction name="actionGray"/>
+    <addaction name="actionJet"/>
+    <addaction name="actionHot"/>
+    <addaction name="separator"/>
+    <addaction name="menuMultiplicador"/>
+   </widget>
+   <widget class="QMenu" name="menuSalir">
+    <property name="title">
+     <string>&amp;Salir</string>
+    </property>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuConfiguraciones"/>
+   <addaction name="menuSalir"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionGray">
+   <property name="text">
+    <string>&amp;Gray</string>
+   </property>
+  </action>
+  <action name="actionJet">
+   <property name="text">
+    <string>&amp;Jet</string>
+   </property>
+  </action>
+  <action name="actionHot">
+   <property name="text">
+    <string>&amp;Hot</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>&amp;Abrir</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+  </action>
+  <action name="action0_4">
+   <property name="text">
+    <string>&amp;0.4</string>
+   </property>
+  </action>
+  <action name="action0_04">
+   <property name="text">
+    <string>0.0&amp;4</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>my_qlabel</class>
+   <extends>QLabel</extends>
+   <header location="global">my_qlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
